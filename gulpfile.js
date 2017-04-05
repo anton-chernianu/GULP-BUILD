@@ -2,12 +2,12 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'), 
 	autoprefixer = require('gulp-autoprefixer'),
-	imagemin = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
-	pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
+	imagemin = require('gulp-imagemin'), 
+	pngquant = require('imagemin-pngquant'), 
 	tinypng = require('gulp-tinypng'), 
-	del = require('del'), // delete folder
-	pug = require('gulp-pug'), // $ npm install gulp-pug
-    browserSync  = require('browser-sync'); // $ npm install browser-sync gulp --save-dev
+	del = require('del'), 
+	pug = require('gulp-pug'), 
+    browserSync  = require('browser-sync'); 
 
 
 gulp.task('tinypng', function () {
@@ -60,7 +60,7 @@ gulp.task('sass', function () {
 
 gulp.task('build', ['clean', 'sass'], function() {
 
-	var buildCss = gulp.src('src/css/**/*')
+	var buildCss = gulp.src('src/css/**/*') // Переносим css в продакшен
 	.pipe(gulp.dest('build/css'))
 
 	var buildFonts = gulp.src('src/fonts/**/*') // Переносим шрифты в продакшен

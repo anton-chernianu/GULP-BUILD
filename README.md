@@ -13,3 +13,10 @@ var
 	pug = require('gulp-pug'), 
 	browserSync  = require('browser-sync'); 
 ```
+Some command:
+```
+gulp         // default task [watch]
+gulp tinypng // compress image
+gulp build   // delete folder /build/ - > dest files
+
+```
