@@ -1,5 +1,5 @@
 # Gulp Build
-Some basic Git commands are:
+Some package:
 ```
 var 
 	gulp = require('gulp'),
