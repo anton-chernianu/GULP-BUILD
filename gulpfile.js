@@ -72,7 +72,7 @@ gulp.task('build', ['clean', 'sass'], function() {
 	var buildHtml = gulp.src('src/*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('build'));
 
-	var buildHtml = gulp.src('src/tinypng/**/') // Переносим TinyPng в продакшен
+	var buildHtml = gulp.src('src/images/**/*') // Переносим TinyPng в продакшен
 	.pipe(gulp.dest('build/images'));
 
 });
